@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrackMySpend</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo"><i class="fas fa-film"></i><br>TrackMySpend<br></div>
+      <div class="nav-links">
+        <br>
+        <a href="#" data-page="dashboard" class="active"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="#" data-page="budget"><i class="fas fa-wallet"></i> Budget</a>
+        <a href="#" data-page="transactions"><i class="fas fa-exchange-alt"></i> Transactions</a>
+        <a href="#" data-page="analytics"><i class="fas fa-chart-line"></i> Analytics</a>
+        <a href="../AboutUs/index.html">About Us</a>
+        <a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+
+        
+
+        
+        
+
+      </div>
+      <button class="theme-toggle"><i class="fas fa-sun"></i></button>
+      <div class="language-selector">
+        <label for="language-select">Language:</label>
+        <select id="language-select">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="ta">Tamil</option>
+          <option value="ja">Japanese</option>
+        </select>
+      </div>
+    </nav>
+    
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="page active">
+      <div class="cards">
+        <div class="card">
+          <h3>Total Budget</h3>
+          <div class="amount" id="total-budget">$0.00</div>
+        </div>
+        <div class="card">
+          <h3>Amount Spent</h3>
+          <div class="amount" id="amount-spent">$0.00</div>
+        </div>
+        <div class="card">
+          <h3>Remaining Budget</h3>
+          <div class="amount" id="remaining-budget">$0.00</div>
+        </div>
+      </div>
+      <div class="progress-container">
+        <h3>Budget Progress</h3>
+        <div class="progress-bar">
+          <div class="progress" id="budget-progress"></div>
+        </div>
+        <div id="progress-text" class="progress-text"></div>
+      </div>
+      <div class="app-links">
+        <h3>Try the web app or download the app for your devices</h3>
+        <div class="buttons">
+          <a href="#" class="btn-app"><i class="fas fa-wallet"></i> Try the WEB APP</a>
+          <a href="#" class="btn-app google"><img src="/C:\Users\cheha\OneDrive\Pictures\gp.png" alt="Google Play" /> GET IT ON Google Play</a>
+          <a href="#" class="btn-app apple"><img src="/C:\Users\cheha\OneDrive\Pictures\ap.jpg" alt="App Store" /> Download on the App Store</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Budget Page -->
+    <div id="budget" class="page">
+      <div class="form-container">
+        <h3>Set Your Budget</h3>
+        <br><br>
+        <div class="form-group">
+          <label for="budget-amount">Budget Amount (₹)</label>
+          <input type="number" id="budget-amount" placeholder="Enter your budget amount" />
+        </div>
+        <div class="form-group">
+          <label for="budget-start-date">Start Date</label>
+          <input type="date" id="budget-start-date" required />
+        </div>
+        <div class="form-group">
+          <label for="budget-end-date">End Date</label>
+          <input type="date" id="budget-end-date" required />
+        </div>
+        <div class="form-group">
+          <label for="budget-period">Budget Period</label>
+          <select id="budget-period">
+            <option value="monthly">Monthly</option>
+            <option value="weekly">Weekly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+        </div>
+        <button class="btn-primary" id="set-budget"><i class="fas fa-check"></i> Set Budget</button>
+      </div>
+    </div>
+
+    <!-- Transactions Page -->
+    <div id="transactions" class="page">
+      <div class="form-container">
+        <h3>Add Transaction</h3>
+        <div class="form-group">
+          <label for="transaction-type">Type</label>
+          <select id="transaction-type">
+            <option value="expense">Expense</option>
+            <option value="income">Income</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="transaction-amount">Amount (₹)</label>
+          <input type="number" id="transaction-amount" placeholder="Enter amount" />
+        </div>
+        <div class="form-group">
+          <label for="transaction-category">Category</label>
+          <select id="transaction-category">
+            <option value="food">Food & Dining</option>
+            <option value="transportation">Transportation</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="utilities">Utilities</option>
+            <option value="shopping">Shopping</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="transaction-description">Description</label>
+          <input type="text" id="transaction-description" placeholder="Enter description" />
+        </div>
+        <button class="btn-primary" id="add-transaction"><i class="fas fa-plus"></i> Add Transaction</button>
+        <button class="btn-primary" id="reset-data" style="margin-top: 10px;"><i class="fas fa-redo"></i> Reset</button>
+      </div>
+      <div class="transactions-list" id="transactions-list"></div>
+      
+      <!-- Pending Bills Section -->
+      <div class="pending-bills-section">
+        <h3>Pending Bills</h3>
+        <div class="form-group">
+          <label for="bill-name">Bill Name</label>
+          <input type="text" id="bill-name" placeholder="Enter bill name" />
+        </div>
+        <div class="form-group">
+          <label for="bill-amount">Amount (₹)</label>
+          <input type="number" id="bill-amount" placeholder="Enter bill amount" />
+        </div>
+        <div class="form-group">
+          <label for="bill-due-date">Due Date</label>
+          <input type="date" id="bill-due-date" />
+        </div>
+        <button class="btn-primary" id="add-bill"><i class="fas fa-plus"></i> Add Bill</button>
+        <div id="pending-bills-list" class="pending-bills-list"></div>
+      </div>
+    </div>
+    <footer>
+      
+      <div class="feedback-section">
+        <a href="feedback.html" id="feedback-button" class="btn-feedback">Leave Feedback</a>
+      </div>
+      
+      
+      
+    </footer>
+
+    <!-- Analytics Page -->
+    <div id="analytics" class="page">
+      <div class="analytics-container">
+        <div class="chart-container">
+          <canvas id="spending-chart"></canvas>
+        </div>
+        <div id="category-list"></div>
+        <div class="expense-bar-graph">
+          <h3>Expense Timeline</h3>
+          <canvas id="expense-timeline-chart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
