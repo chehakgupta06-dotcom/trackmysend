@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../main"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../download"
+		}
+	]
+}
