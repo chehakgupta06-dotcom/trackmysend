@@ -97,3 +97,7 @@ To empower users to take control of their finances through intelligent, interact
 - Uses free APIs and services (EmailJS free tier)
 - Limited cloud and hosting resources
 - No direct bank or payment gateway integration
+ ## Wireframes (Figma)
+Low-fidelity wireframes for the Budget Tracker application (6 screens):
+https://www.figma.com/design/vh2wdW91lnJCMju5fxdstt/Budget-Tracker--WireFrames?node-id=0-1&t=wiBZdPiVpBM5giFf-1
+
