@@ -62,6 +62,34 @@ To empower users to take control of their finances through intelligent, interact
 - Users have access to a microphone-enabled device
 - Users have a valid email address for notifications
 - Modern web browser support is available
+  ---
+
+## MoSCoW Prioritization
+
+### Must Have
+- User account creation and login
+- Add income and expenses
+- Monthly budget setup
+- Expense categorization
+- Voice-based expense entry
+- Persistent data storage
+- Basic analytics and summaries
+
+### Should Have
+- Email alerts on overspending using EmailJS
+- Category-wise charts and visual reports
+- Responsive design for mobile devices
+
+### Could Have
+- Dark mode support
+- Export expense data
+- Advanced spending insights
+
+### Won’t Have (For Now)
+- Direct bank integration
+- AI-based financial recommendations
+- Multi-currency support
+
 
 ---
 
