@@ -108,3 +108,10 @@ The following diagram shows the high-level architecture of the Budget Tracker ap
 
 ![Architecture Diagram](docs/architecture/architecture-diagram.png)
 
+---
+
+## Branching Strategy
+This project follows GitHub Flow.  
+The `main` branch contains stable code, while feature-specific development is done in separate feature branches such as `feature-ui`, which are later merged into `main`.
+
+
