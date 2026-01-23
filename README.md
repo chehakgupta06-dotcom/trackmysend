@@ -101,3 +101,10 @@ To empower users to take control of their finances through intelligent, interact
 Low-fidelity wireframes for the Budget Tracker application (6 screens):
 https://www.figma.com/design/vh2wdW91lnJCMju5fxdstt/Budget-Tracker--WireFrames?node-id=0-1&t=wiBZdPiVpBM5giFf-1
 
+---
+
+## Architecture Diagram
+The following diagram shows the high-level architecture of the Budget Tracker application.
+
+![Architecture Diagram](docs/architecture/architecture-diagram.png)
+
