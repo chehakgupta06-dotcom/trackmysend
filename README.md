@@ -108,3 +108,10 @@ The following diagram shows the high-level architecture of the Budget Tracker ap
 
 ![Architecture Diagram](docs/architecture/architecture-diagram.png)
 
+## Software Design
+
+### Architecture Diagram
+
+![Architecture](docs/design/diagrams/architecture.png)
+
+
