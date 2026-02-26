@@ -113,7 +113,4 @@ The following diagram shows the high-level architecture of the Budget Tracker ap
 
 ### Architecture Diagram
 
-The system follows a layered architecture separating the Presentation Layer, Service Layer, and Data & Integration Layer.
-
-![Architecture Diagram](docs/design/diagrams/architecture.png)
-
+![Architecture](./docs/design/diagrams/architecture.png)
