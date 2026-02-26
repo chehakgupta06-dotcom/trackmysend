@@ -112,4 +112,4 @@ The following diagram shows the high-level architecture of the Budget Tracker ap
 ## Software Design
 
 ### Architecture Diagram
-![Architecture](https://raw.githubusercontent.com/chehakgupta06-dotcom/trackmysend/main/docs/design/diagrams/architecture.png)
+![Architecture](docs/architecture.png)
