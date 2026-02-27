@@ -131,16 +131,16 @@ The application consists of the following UI screens:
 
 ![Landing](docs/design/ui/figma-screens/01_landing.png)
 
-![Dashboard](docs/design/ui/figma-screens/02_dashboard.png)
+![Dashboard](docs/design/ui/figma-screens/02_Dashboard.png)
 
-![Add Expense](docs/design/ui/figma-screens/03_add_expense.png)
+![Add Expense](docs/design/ui/figma-screens/03_Add_Expense.png)
 
-![Transactions](docs/design/ui/figma-screens/04_transactions.png)
+![Transactions](docs/design/ui/figma-screens/04_Transactions.png)
 
-![Budget Setup](docs/design/ui/figma-screens/05_budget_setup.png)
+![Budget Setup](docs/design/ui/figma-screens/05_Budget_Setup.png)
 
-![Analytics](docs/design/ui/figma-screens/06_analytics.png)
+![Analytics](docs/design/ui/figma-screens/06_Analytics.png)
 
-![Feedback](docs/design/ui/figma-screens/07_feedback.png)
+![Feedback](docs/design/ui/figma-screens/07_Real-Time_Feedback.png)
 
-![Bills & Reminders](docs/design/ui/figma-screens/08_bills_reminders.png)
+![Bills & Reminders](docs/design/ui/figma-screens/08_Voice-Based_Transactions.png)
