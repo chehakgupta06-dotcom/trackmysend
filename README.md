@@ -129,30 +129,32 @@ The application consists of the following UI screens:
 
 ### Screens
 
-## 1️⃣ Landing Page
-![Landing](./01_landing%20(2).png)
+## 🎨 UI Design Screens (Figma)
 
-## 2️⃣ Dashboard
-![Dashboard](./02_Dashboard%20(2).png)
+###  Landing Page
+![Landing](docs/design/ui/figma-screens/01_landing%20(2).png)
 
-## 3️⃣ Add Expense
-![Add Expense](./03_Add_Expense%20(2).png)
+### Dashboard
+![Dashboard](docs/design/ui/figma-screens/02_Dashboard%20(2).png)
 
-## 4️⃣ Transactions
-![Transactions](./04_Transactions%20(2).png)
+### Add Expense
+![Add Expense](docs/design/ui/figma-screens/03_Add_Expense%20(2).png)
 
-## 5️⃣ Budget Setup
-![Budget Setup](./05_Budget_Setup%20(2).png)
+### Transactions
+![Transactions](docs/design/ui/figma-screens/04_Transactions%20(2).png)
 
-## 6️⃣ Analytics
-![Analytics](./06_Analytics%20(2).png)
+### Budget Setup
+![Budget Setup](docs/design/ui/figma-screens/05_Budget_Setup%20(2).png)
 
-## 7️⃣ Real Time Feedback
-![Real Time Feedback](./07_RealTimeFeedback%20(2).png)
+### Analytics
+![Analytics](docs/design/ui/figma-screens/06_Analytics%20(2).png)
 
-## 8️⃣ Voice Based Transactions
-![Voice Transactions](./08_Voice_Based_Transactions%20(2).png)
+### Real-Time Feedback
+![Real-Time Feedback](docs/design/ui/figma-screens/07_RealTimeFeedback%20(2).png)
 
-## 9️⃣ Bills & Reminders
-![Bills Reminders](./Bills_reminders.png)
+### Voice-Based Transactions
+![Voice-Based Transactions](docs/design/ui/figma-screens/08_Voice_Based_Transactions%20(2).png)
+
+### Bills & Reminders
+![Bills & Reminders](docs/design/ui/figma-screens/Bills_reminders.png)
 
