@@ -141,6 +141,6 @@ The application consists of the following UI screens:
 
 ![Analytics](docs/design/ui/figma-screens/06_Analytics.png)
 
-![Feedback](docs/design/ui/figma-screens/07_Real-Time_Feedback.png)
 
-![Bills & Reminders](docs/design/ui/figma-screens/08_Voice-Based_Transactions.png)
+
+
