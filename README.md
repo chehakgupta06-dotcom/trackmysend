@@ -143,6 +143,6 @@ The application consists of the following UI screens:
 
 ![Bills & Reminders](docs/design/ui/figma-screens/Reminders.png)
 
-![Feedback](docs/design/ui/figma-screens/07_Real-Time_Feedback.png)
+![Real-Time Feedback](docs/design/ui/figma-screens/07_Real-Time_Feedback.png)
 
-![Voice Based Transactions](docs/design/ui/figma-screens/08_Voice-Based_Transactions.png)
+![Voice Based Transactions](docs/design/ui/figma-screens/08%20Voice%20-%20Based_Transactions.png)
