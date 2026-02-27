@@ -113,3 +113,34 @@ The following diagram shows the high-level architecture of the Budget Tracker ap
 
 ### Architecture Diagram
 ![Architecture](docs/architecture.png)
+
+## User Interface Design
+
+The application consists of the following UI screens:
+
+- Landing Page  
+- Dashboard  
+- Add Expense (Voice Feature)  
+- Transactions  
+- Budget Setup  
+- Analytics  
+- Feedback (EmailJS Integration)  
+- Bills & Reminders (Target Date Alerts)  
+
+### Screens
+
+![Landing](docs/design/ui/figma-screens/01_landing.png)
+
+![Dashboard](docs/design/ui/figma-screens/02_dashboard.png)
+
+![Add Expense](docs/design/ui/figma-screens/03_add_expense.png)
+
+![Transactions](docs/design/ui/figma-screens/04_transactions.png)
+
+![Budget Setup](docs/design/ui/figma-screens/05_budget_setup.png)
+
+![Analytics](docs/design/ui/figma-screens/06_analytics.png)
+
+![Feedback](docs/design/ui/figma-screens/07_feedback.png)
+
+![Bills & Reminders](docs/design/ui/figma-screens/08_bills_reminders.png)
