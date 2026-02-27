@@ -141,5 +141,5 @@ The application consists of the following UI screens:
 
 ![Analytics](docs/design/ui/figma-screens/06_Analytics.png)
 
-![Bills & Reminders](docs/design/ui/figma-screens/reminders.png)
+![Bills & Reminders](docs/design/ui/figma-screens/Reminders.png)
 
