@@ -158,3 +158,10 @@ The application consists of the following UI screens:
 ### Bills & Reminders
 ![Bills & Reminders](docs/design/ui/figma-screens/Bills_reminders.png)
 
+### Interactive Prototype
+
+The interactive prototype can be accessed here:
+
+https://www.figma.com/design/0Tux13yRhzTGhUMNpD0XFJ/Untitled?node-id=12-44&t=xq3I0jhW3Q94tycF-1
+
+
