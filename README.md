@@ -129,20 +129,30 @@ The application consists of the following UI screens:
 
 ### Screens
 
-![Landing](docs/design/ui/figma-screens/01_landing.png)
+## 1️⃣ Landing Page
+![Landing](./01_landing%20(2).png)
 
-![Dashboard](docs/design/ui/figma-screens/02_Dashboard.png)
+## 2️⃣ Dashboard
+![Dashboard](./02_Dashboard%20(2).png)
 
-![Add Expense](docs/design/ui/figma-screens/03_Add_Expense.png)
+## 3️⃣ Add Expense
+![Add Expense](./03_Add_Expense%20(2).png)
 
-![Transactions](docs/design/ui/figma-screens/04_Transactions.png)
+## 4️⃣ Transactions
+![Transactions](./04_Transactions%20(2).png)
 
-![Budget Setup](docs/design/ui/figma-screens/05_Budget_Setup.png)
+## 5️⃣ Budget Setup
+![Budget Setup](./05_Budget_Setup%20(2).png)
 
-![Analytics](docs/design/ui/figma-screens/06_Analytics.png)
+## 6️⃣ Analytics
+![Analytics](./06_Analytics%20(2).png)
 
-![Bills & Reminders](docs/design/ui/figma-screens/Reminders.png)
+## 7️⃣ Real Time Feedback
+![Real Time Feedback](./07_RealTimeFeedback%20(2).png)
 
-![Real-Time Feedback](docs/design/ui/figma-screens/07_Real-Time_%20Feedback.png)
+## 8️⃣ Voice Based Transactions
+![Voice Transactions](./08_Voice_Based_Transactions%20(2).png)
 
-![Voice Based Transactions](docs/design/ui/figma-screens/08_Voice%20-%20Based_Transactions.png)
+## 9️⃣ Bills & Reminders
+![Bills Reminders](./Bills_reminders.png)
+
