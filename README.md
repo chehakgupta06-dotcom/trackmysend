@@ -110,6 +110,12 @@ The following diagram shows the high-level architecture of the Budget Tracker ap
 
 
 ## Software Design
+The system follows a Layered Architecture separating the Presentation Layer (UI), Service Layer (business logic), and Data/Integration Layer. This ensures clear separation of concerns, easier maintenance, and scalability.
+Business logic such as budget calculation, bill reminders, and transaction handling is kept independent from the UI to maintain low coupling and improve modularity.
+Each core feature (Transactions, Budget Setup, Analytics, Bills, Voice Input, Feedback) is designed as an independent module to ensure high cohesion and future extensibility.
+External services such as EmailJS (for real-time feedback) and Speech Recognition APIs (for voice-based transactions) are encapsulated within dedicated service modules to avoid direct dependency in the UI layer.
+Real-time alerts for overdue bills and budget thresholds enhance usability by providing immediate feedback and proactive financial management.
+
 
 ### Architecture Diagram
 ![Architecture](docs/architecture.png)
