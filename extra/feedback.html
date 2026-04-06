@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback - TrackMySpend</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <style>
+    .rating {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .rating i {
+      font-size: 2rem;
+      color: #555 !important;
+      cursor: pointer;
+      transition: color 0.2s, transform 0.1s;
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    .rating i:hover,
+    .rating i.active {
+      color: #FFD700 !important;
+      transform: scale(1.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo"><i class="fas fa-film"></i><br>TrackMySpend</div>
+      <div class="nav-links">
+        <a href="../index.html"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+      </div>
+    </nav>
+
+    <div class="feedback-page">
+      <h2>We Value Your Feedback</h2>
+      <br>
+      <p>Help us improve your experience by sharing your thoughts.</p>
+      <br>
+      <form class="feedback-form" onsubmit="event.preventDefault(); submitFeedback();">
+        <div class="form-group">
+          <label for="feedback-name">Your Name *</label>
+          <input type="text" id="feedback-name" required placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="feedback-email">Your Email *</label>
+          <input type="email" id="feedback-email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label>Rating *</label>
+          <div class="rating">
+            <i class="fas fa-star" data-rating="1"></i>
+            <i class="fas fa-star" data-rating="2"></i>
+            <i class="fas fa-star" data-rating="3"></i>
+            <i class="fas fa-star" data-rating="4"></i>
+            <i class="fas fa-star" data-rating="5"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="feedback-text">Your Feedback *</label>
+          <textarea id="feedback-text" required placeholder="Please share your experience, suggestions, or concerns"></textarea>
+        </div>
+        <div class="button-group">
+          <button type="submit" class="btn-primary">Submit Feedback</button>
+          <a href="../index.html" class="btn-primary">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let rating = 0;
+    emailjs.init("sfEsyfn3fwvKKXaAm");
+
+    document.querySelectorAll('.rating i').forEach(star => {
+      star.addEventListener('click', () => {
+        rating = parseInt(star.getAttribute('data-rating'));
+        updateStars();
+      });
+      star.addEventListener('mouseover', () => {
+        const hovered = parseInt(star.getAttribute('data-rating'));
+        document.querySelectorAll('.rating i').forEach(s => {
+          s.style.color = parseInt(s.getAttribute('data-rating')) <= hovered ? '#FFD700' : '#555';
+        });
+      });
+      star.addEventListener('mouseout', () => {
+        updateStars();
+      });
+    });
+
+    function updateStars() {
+      document.querySelectorAll('.rating i').forEach(star => {
+        const starRating = parseInt(star.getAttribute('data-rating'));
+        star.classList.toggle('active', starRating <= rating);
+        star.style.color = starRating <= rating ? '#FFD700' : '#555';
+      });
+    }
+
+    function submitFeedback() {
+      const name = document.getElementById('feedback-name').value.trim();
+      const email = document.getElementById('feedback-email').value.trim();
+      const feedback = document.getElementById('feedback-text').value.trim();
+
+      if (!name || !email || !feedback || rating === 0) {
+        alert('Please fill in all fields and provide a rating.');
+        return;
+      }
+
+      const feedbackData = { name, email, feedback, rating, date: new Date().toLocaleString() };
+      const feedbacks = JSON.parse(localStorage.getItem('feedbacks') || '[]');
+      feedbacks.push(feedbackData);
+      localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
+
+      emailjs.send('service_lxnti3n', 'template_9gkt27u', {
+        name, email, feedback, rating, date: feedbackData.date
+      })
+      .then(() => {
+        alert('Thank you for your feedback!');
+        window.location.href = '../index.html';
+      })
+      .catch((err) => {
+        console.error('FAILED...', err);
+        alert('Feedback saved locally. Error sending email.');
+      });
+    }
+  </script>
+</body>
+</html>
