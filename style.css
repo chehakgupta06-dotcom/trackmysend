@@ -696,6 +696,14 @@ form .form-group textarea:focus {
   justify-content: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+    font-size: 20px;
+}
+.btn-mic::before {
+  content: "\f130";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 22px;
+  color: white;
 }
 
 .btn-mic:hover {
